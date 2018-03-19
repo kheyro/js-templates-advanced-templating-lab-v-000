@@ -8,7 +8,7 @@
   </head>
   <body>
     <main id="main">
-      <form onsubmit="createRecipe()" id="recipe-form">
+      <form onsubmit="createRecipe(); return false;" id="recipe-form">
         <input type="text" id="name">
         <div name="ingredients">
           <input type="text">
@@ -51,7 +51,7 @@
       </script>
 
     </main>
-    
+
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
     <!-- Open this file and call `mocha.run()` in console to run tests -->

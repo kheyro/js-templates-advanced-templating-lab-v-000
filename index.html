@@ -46,7 +46,6 @@
         <h2>{{ name }}</h2>
         {{> recipeDetailsPartial }}
         <a href="#" onclick="displayEditForm()">Edit Recipe</a>
-        {{> recipeFormPartial }}
         <hr>
       </script>
 
@@ -72,6 +71,10 @@
             <input type="text" name="ingredients"><br>
           <input type="submit" />
         </form>
+      </script>
+
+      <script id="recipe-form-partial" type="text/x-handlebars-template">
+        {{> recipeFormPartial }}
       </script>
 
     </main>

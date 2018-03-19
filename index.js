@@ -80,8 +80,8 @@ function updateRecipe() {
 
   let ingredients = []
   for(var i=0;i<ingredientsList.length;i++) {
-    if(ingredientsList[i].innerText !== "") {
-      ingredients.push(ingredientsList[i].innerText)
+    if(ingredientsList[i].value !== "") {
+      ingredients.push(ingredientsList[i].value)
     }
   }
 }

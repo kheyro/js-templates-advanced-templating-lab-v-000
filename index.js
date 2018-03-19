@@ -88,7 +88,6 @@ function updateRecipe() {
   document.getElementById('recipe').remove()
   let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
 
-  // console.log('ingredients', ingredients)
   document.getElementById("main").innerHTML += recipeTemplate({name: name, description: description, ingredients: ingredients})
 
 }

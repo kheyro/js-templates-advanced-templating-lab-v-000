@@ -10,7 +10,7 @@ function init() {
     return new Handlebars.SafeString('<p><label>Ingredient</label><br><input name="editedIngredrients" value="' + ingredient + '"></p>')
   })
 
-  createRecipe() {
+  function createRecipe() {
 
     let name = document.getElementById('name').value
     let description = document.getElementById("description").value

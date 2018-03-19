@@ -58,12 +58,12 @@ function displayEditForm() {
   let ingredientsNodes = document.getElementsByName('ingredientsList')
 
   let ingredients = []
-  for(var i=0;i<ingredientsNodes.length;i++) {
+  for(var i=0;i<ingredientsList.length;i++) {
     if(ingredientsNodes[i].value !== "") {
       ingredients.push(ingredientsNodes[i].value)
     }
   }
-  
+
   let formTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
 
 }

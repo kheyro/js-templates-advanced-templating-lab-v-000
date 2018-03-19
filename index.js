@@ -3,8 +3,11 @@ function init() {
   Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML)
 
   Handlebars.registerHelper('displayIngredient', function() {
-    
+
   })
+
+  Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form").innerHTML)
+
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   init()

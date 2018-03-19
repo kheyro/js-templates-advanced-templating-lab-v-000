@@ -85,7 +85,7 @@ function updateRecipe() {
     }
   }
 
-  document.getElementById('recipe').delete
+  document.getElementById('recipe').remove()
   let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
 
   // console.log('ingredients', ingredients)

@@ -70,5 +70,9 @@ function displayEditForm() {
   let formTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
 
   document.getElementById("recipe").innerHTML += formTemplate({name: name, description: description, ingredients: ingredients})
+}
 
+
+function updateRecipe() {
+  
 }

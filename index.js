@@ -67,7 +67,7 @@ function displayEditForm() {
     }
   }
 
-  let formTemplate = Handlebars.compile(document.getElementById("form-template").innerHTML);
+  let formTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
 
   document.getElementById("recipe-template").innerHTML += formTemplate({name: name, description: description, ingredients: ingredients})
 

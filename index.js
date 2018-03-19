@@ -59,8 +59,8 @@ function displayEditForm() {
 
   let ingredients = []
   for(var i=0;i<ingredientsList.length;i++) {
-    if(ingredientsNodes[i].value !== "") {
-      ingredients.push(ingredientsNodes[i].value)
+    if(ingredientsList[i].value !== "") {
+      ingredients.push(ingredientsList[i].value)
     }
   }
 

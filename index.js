@@ -8,6 +8,10 @@ function init() {
 
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form").innerHTML)
 
+  createRecipe() {
+
+  }
+
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   init()

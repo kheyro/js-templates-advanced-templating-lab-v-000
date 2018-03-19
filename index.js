@@ -16,7 +16,7 @@ function init() {
   }
 
   function displayEditForm() {
-    Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form").innerHTML)
+    Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML)
 
   }
 

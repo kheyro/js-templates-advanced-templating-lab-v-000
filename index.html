@@ -68,8 +68,14 @@
 
       <script id="recipe-form-partial" type="text/x-handlebars-template">
         <form onsubmit="updateRecipe(); return false;">
-            <input type="text" id="editedName" value="{{name}}"><br>
-            <input type="text" id="editedDescription" value="{{description}}"><br>
+            <p>
+              <label for="editedName">Name</label><br>
+              <input type="text" id="editedName" value="{{name}}"><br>
+            </p>
+            <p>
+              <label for="editedDescription">Name</label><br>
+              <input type="text" id="editedDescription" value="{{description}}"><br>
+            </p>
             {{#each ingredients}}
               {{ displayEditIngredient this }}
             {{/each}}

@@ -15,6 +15,7 @@ function init() {
 
 
     let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
+    
 
   }
 

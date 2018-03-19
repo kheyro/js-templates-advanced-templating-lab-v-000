@@ -3,12 +3,7 @@ function init() {
   Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML)
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form").innerHTML)
 
-  Handlebars.registerHelper('displayIngredient', function() {
-
-  })
-
-
-
+  Handlebars.registerHelper('displayIngredient', function() { })
   function createRecipe() {
 
     let name = document.getElementById('name')

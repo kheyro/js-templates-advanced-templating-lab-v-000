@@ -33,7 +33,7 @@ Handlebars.registerHelper('displayIngredient', function(ingredient) {
   return new Handlebars.SafeString('<li>' + ingredient + '</li>')
 })
 Handlebars.registerHelper('displayEditIngredient', function(ingredient) {
-  return new Handlebars.SafeString('<li>' + ingredient + '</li>')
+  return new Handlebars.SafeString('<input name="editedIngredrients">' + ingredient + '</li>')
 })
 
 function createRecipe() {

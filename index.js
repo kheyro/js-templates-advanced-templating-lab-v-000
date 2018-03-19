@@ -12,8 +12,8 @@ function init() {
     let ingredients = document.getElementsByName('ingredients')
 
     let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
-// 
-    // console.log('ingredients', ingredients)
+
+    console.log('ingredients', ingredients)
     let html = recipeTemplate({name: name, ingredients: ingredients})
   }
 

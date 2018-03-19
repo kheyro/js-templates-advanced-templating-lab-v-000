@@ -11,7 +11,7 @@ function init() {
   function createRecipe() {
 
     let name = document.getElementById('name')
-    let ingredients = document.getElementsByName('ingredients')
+    let ingredients = document.getElementsByName('ingredients').children.value
 
     let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
 

@@ -56,7 +56,6 @@ function createRecipe() {
 }
 
 function displayEditForm() {
-  alert('ee')
   let name = document.getElementById('name').value
   let description = document.getElementById("description").value
   let ingredientsList = document.getElementsByName('ingredientsList')

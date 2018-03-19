@@ -9,7 +9,11 @@ function init() {
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form").innerHTML)
 
   createRecipe() {
-    
+
+    let name = document.getElementById('name')
+    let ingredients = document.getElementsByName('ingredients')
+    // Handlebars.compile(document.getElementById("main-template").innerHTML);
+
   }
 
 }

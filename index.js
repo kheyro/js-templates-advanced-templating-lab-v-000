@@ -12,7 +12,9 @@ function init() {
 
     let name = document.getElementById('name')
     let ingredients = document.getElementsByName('ingredients')
-    // Handlebars.compile(document.getElementById("main-template").innerHTML);
+
+
+    let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
 
   }
 

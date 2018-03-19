@@ -15,12 +15,12 @@ function init() {
 
     let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
 
-    console.log('ingredients', ingredients)
+    // console.log('ingredients', ingredients)
     let html = recipeTemplate({name: name, ingredients: ingredients})
 
   }
 
-  
+
 
 }
 document.addEventListener("DOMContentLoaded", function(event) {

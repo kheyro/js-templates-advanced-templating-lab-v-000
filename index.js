@@ -74,9 +74,9 @@ function displayEditForm() {
 
 
 function updateRecipe() {
-  let name = document.getElementById('recipe-name').innerText
-  let description = document.getElementById('recipe-description').innerText
-  let ingredientsList = document.getElementsByName('ingredientsList')
+  let name = document.getElementById('editedName').value
+  let description = document.getElementById("editedDescription").value
+  let ingredientsList = document.getElementsByName('editedIngredrients')
 
   let ingredients = []
   for(var i=0;i<ingredientsList.length;i++) {

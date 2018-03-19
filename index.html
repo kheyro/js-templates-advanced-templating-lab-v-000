@@ -40,20 +40,17 @@
         <input type="submit" />
       </form>
 
-      <<hr>
+      <hr>
 
       <script id="recipe-template" type="text/x-handlebars-template">
-        {{ name }}
+        <h2>{{ name }}</h2>
         {{> recipeDetailsPartial }}
         {{> recipeFormPartial }}
         <a href="#" onclick="displayEditForm()">Edit Recipe</a>
       </script>
 
       <script id="recipe-details-partial" type="text/x-handlebars-template">
-        <div>
-          {{description}}
-        </div>
-
+        <h3>{{description}}</h3>
         <div>
           <ul>
             {{#each ingredients}}

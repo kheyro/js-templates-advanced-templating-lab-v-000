@@ -53,7 +53,10 @@ function createRecipe() {
 }
 
 function displayEditForm() {
-
+  let name = document.getElementById('name').value
+  let description = document.getElementById("description").value
+  let ingredientsNodes = document.getElementsByName('ingredients')
+  
   let formTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
 
 }

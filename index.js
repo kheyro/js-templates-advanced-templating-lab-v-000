@@ -55,8 +55,8 @@ function createRecipe() {
 function displayEditForm() {
   let name = document.getElementById('name').value
   let description = document.getElementById("description").value
-  let ingredientsNodes = document.getElementsByName('ingredients')
-  
+  let ingredientsNodes = document.getElementsByName('ingredientsList')
+
   let formTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
 
 }

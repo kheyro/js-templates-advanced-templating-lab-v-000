@@ -65,6 +65,7 @@ function init() {
     document.getElementById("main").innerHTML += recipeTemplate({name: name, description: description, ingredients: ingredients})
 
   }
+  
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   // init()

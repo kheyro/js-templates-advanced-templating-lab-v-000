@@ -8,7 +8,26 @@
   </head>
   <body>
     <main id="main">
-
+      <form onsubmit="createRecipe(); return false;" id="recipe-form">
+        <input type="text" id="name">
+        <div name="field">
+          <input type="text" name="ingredients">
+        </div>
+        <div name="field">
+          <input type="text" name="ingredients">
+        </div>
+        <div name="field">
+          <input type="text" name="ingredients">
+        </div>
+        <div name="field">
+          <input type="text" name="ingredients">
+        </div>
+        <div name="field">
+          <input type="text" name="ingredients">
+        </div>
+        <input type="submit" />
+      </form>
+      
       <script id="recipe-template" type="text/x-handlebars-template">
         {{ name }}
         {{> recipeDetailsPartial }}
@@ -29,7 +48,7 @@
       </script>
 
       <script id="recipe-form-template" type="text/x-handlebars-template">
-    
+
       </script>
 
     </main>

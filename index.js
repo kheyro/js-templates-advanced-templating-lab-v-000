@@ -54,6 +54,6 @@ function createRecipe() {
 
 function displayEditForm() {
 
-
+  let formTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
 
 }

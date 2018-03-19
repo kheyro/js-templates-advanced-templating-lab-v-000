@@ -9,7 +9,7 @@ function init() {
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form").innerHTML)
 
   createRecipe() {
-
+    
   }
 
 }

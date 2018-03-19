@@ -74,5 +74,14 @@ function displayEditForm() {
 
 
 function updateRecipe() {
-  
+  let name = document.getElementById('recipe-name').innerText
+  let description = document.getElementById('recipe-description').innerText
+  let ingredientsList = document.getElementsByName('ingredientsList')
+
+  let ingredients = []
+  for(var i=0;i<ingredientsList.length;i++) {
+    if(ingredientsList[i].innerText !== "") {
+      ingredients.push(ingredientsList[i].innerText)
+    }
+  }
 }

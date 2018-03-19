@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 //put any page initialization/handlebars initialization here
 Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML)
+Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML)
 Handlebars.registerHelper('displayIngredient', function(ingredient) {
   return new Handlebars.SafeString('<li>' + ingredient + '</li>')
 })
@@ -52,6 +53,7 @@ function createRecipe() {
 }
 
 function displayEditForm() {
-  Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML)
+
+
 
 }

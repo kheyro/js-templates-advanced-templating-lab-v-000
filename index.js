@@ -32,6 +32,9 @@ Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-
 Handlebars.registerHelper('displayIngredient', function(ingredient) {
   return new Handlebars.SafeString('<li>' + ingredient + '</li>')
 })
+Handlebars.registerHelper('displayEditIngredient', function(ingredient) {
+  return new Handlebars.SafeString('<li>' + ingredient + '</li>')
+})
 
 function createRecipe() {
 

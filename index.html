@@ -61,6 +61,10 @@
       </script>
 
       <script id="recipe-form-template" type="text/x-handlebars-template">
+        {{> recipeFormPartial }}
+      </script>
+
+      <script id="recipe-form-partial" type="text/x-handlebars-template">
         <form onsubmit="updateRecipe(); return false;">
             <input type="text" id="name"><br>
             <input type="text" id="description"><br>
@@ -71,10 +75,6 @@
             <input type="text" name="ingredients"><br>
           <input type="submit" />
         </form>
-      </script>
-
-      <script id="recipe-form-partial" type="text/x-handlebars-template">
-        {{> recipeFormPartial }}
       </script>
 
     </main>

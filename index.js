@@ -10,7 +10,7 @@ function init() {
     return new Handlebars.SafeString('<p><label>Ingredient</label><br><input name="editedIngredrients" value="' + ingredient + '"></p>')
   })
 
-  function createRecipe() {
+  createRecipe() {
 
     let name = document.getElementById('name').value
     let description = document.getElementById("description").value
@@ -65,7 +65,7 @@ function init() {
     document.getElementById("main").innerHTML += recipeTemplate({name: name, description: description, ingredients: ingredients})
 
   }
-  
+
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   // init()

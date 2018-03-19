@@ -6,7 +6,7 @@ function init() {
   function createRecipe() {
 
     let name = document.getElementById('name')
-    let ingredients = document.getElementsByName('ingredients').children.value
+    let ingredients = document.getElementsByName('ingredients')
 
     let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
 
@@ -17,6 +17,7 @@ function init() {
 
   function displayEditForm() {
     Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form").innerHTML)
+
   }
 
 

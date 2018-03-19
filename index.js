@@ -54,4 +54,5 @@ function createRecipe() {
 
 function displayEditForm() {
     Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-template").innerHTML)
+
 }

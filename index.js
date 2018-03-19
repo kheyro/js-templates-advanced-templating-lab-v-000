@@ -8,7 +8,7 @@ function init() {
 
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form").innerHTML)
 
-  createRecipe() {
+  function createRecipe() {
 
     let name = document.getElementById('name')
     let ingredients = document.getElementsByName('ingredients')

@@ -84,4 +84,6 @@ function updateRecipe() {
       ingredients.push(ingredientsList[i].value)
     }
   }
+
+  
 }
